@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.assignments.models.Movies;
 import com.example.project.R;
 import com.example.project.models.User;
 
@@ -16,9 +17,9 @@ import javax.xml.xpath.XPathFunctionResolver;
 
 public class CustomAdapter extends BaseAdapter {
 
-    ArrayList<User> users;
+    ArrayList<Movies> users;
     private Integer[] mImage = {R.drawable.im1, R.drawable.im2, R.drawable.im3, R.drawable.im4};
-    public CustomAdapter(ArrayList<User> users) {
+    public CustomAdapter(ArrayList<Movies> users) {
         this.users = users;
     }
 
@@ -28,7 +29,7 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public User getItem(int position) {
+    public Movies getItem(int position) {
         return users.get(position);
     }
 
@@ -50,7 +51,7 @@ public class CustomAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) view.getTag();
         }
 
-        User user = getItem(position);
+        Movies user = getItem(position);
         viewHolder.nameTv.setText(user.getName());
         viewHolder.ratingTv.setText(user.getRating());
         viewHolder.detailTv.setText(user.getDetail());
