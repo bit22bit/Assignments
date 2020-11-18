@@ -18,7 +18,7 @@ import javax.xml.xpath.XPathFunctionResolver;
 public class CustomAdapter extends BaseAdapter {
 
     ArrayList<Movies> users;
-    private Integer[] mImage = {R.drawable.im1, R.drawable.im2, R.drawable.im3, R.drawable.im4};
+    private Integer[] mImage = {R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.e, R.drawable.f, R.drawable.g};
     public CustomAdapter(ArrayList<Movies> users) {
         this.users = users;
     }

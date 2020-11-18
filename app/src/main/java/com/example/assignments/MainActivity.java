@@ -17,10 +17,14 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<Movies> generateMovies() {
         ArrayList<Movies> users = new ArrayList<>();
-        users.add(new Movies("Supna", "Rating: 4/5", "Punjabi love story",""));
-        users.add(new Movies("Rabb Da Radio","Rating: 4/5", "Punjabi love story",""));
-        users.add(new Movies("Khaali Peeli","Rating: 4/5","Punjabi love story", ""));
-        users.add(new Movies("Daaka","Rating: 4/5","Punjabi love story", ""));
+        users.add(new Movies("Sufna", "Rating: 4/5", "A love story of punjabi villager with an orphan girl.",""));
+        users.add(new Movies("Chal Mera Putt","Rating: 5/5", "Struggle of an illegal resident in London",""));
+        users.add(new Movies("Love Punjab","Rating: 4/5","Representing Punjab by a kid living in Canada", ""));
+        users.add(new Movies("Sanju","Rating: 4/5","Biopic of Sanjay Dutt, an actor from the Bollywood", ""));
+        users.add(new Movies("Dil Bechara","Rating: 4/5","Falling in love while having a terminal illness", ""));
+        users.add(new Movies("Love Aaj Kal 2","Rating: 4/5","Separation story of two married people", ""));
+        users.add(new Movies("Dangal","Rating: 4/5","decides to fulfil his dream of winning a gold medal by a girl", ""));
+
         return users;
     }
 
