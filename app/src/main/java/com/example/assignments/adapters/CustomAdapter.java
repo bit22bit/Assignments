@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.assignments.models.Movies;
-import com.example.project.R;
-import com.example.project.models.User;
+import com.example.assignments.R;
+import com.example.assignments.models.Movies;
 
 import java.util.ArrayList;
 
@@ -43,7 +43,7 @@ public class CustomAdapter extends BaseAdapter {
         ViewHolder viewHolder;
 
         if (view == null){
-            view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.user_row_layout, null);
+            view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.movielayout, null);
             viewHolder = new ViewHolder(view);
             view.setTag(viewHolder);
         }
